@@ -1,0 +1,83 @@
+<section class="enquiry-section enquiry-section1">
+  <div class="container-fluid">
+   <form id="enquiryForm" novalidate>
+                    <div class="row form-row">
+                        <div class="col-12">
+                            <span  class="enquiry-title">Request Enquiry</span>
+                        </div>
+                        <div class="col-12 py-0">
+                              <span class="enquiry-subtitle required-text">All Fields marked with (*) are required.</span>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <i class="fas fa-user input-icon"></i>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="fullName" 
+                                    name="fullName"
+                                    placeholder="Full Name *" 
+                                    required
+                                />
+                            </div>
+                        </div>
+                        
+                        <!-- Phone Number -->
+                        <div class="col">
+                            <div class="form-group">
+                                <i class="fas fa-phone input-icon"></i>
+                                <input 
+                                    type="tel" 
+                                    class="form-control" 
+                                    id="phoneNumber" 
+                                    name="phoneNumber"
+                                    placeholder="Phone Number *" 
+                                    required
+                                />
+                            </div>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="col">
+                            <div class="form-group">
+                                <i class="fas fa-envelope input-icon"></i>
+                                <input 
+                                    type="email" 
+                                    class="form-control" 
+                                    id="emailId" 
+                                    name="emailId"
+                                    placeholder="Your Email Id *" 
+                                    required
+                                />
+                            </div>
+                        </div>
+                        
+                        <!-- Program Selection -->
+                        <div class="col">
+                            <div class="form-group">
+                                <i class="fas fa-graduation-cap input-icon"></i>
+                                <select 
+                                    class="form-select" 
+                                    id="program" 
+                                    name="program"
+                                    required>
+                                    <option value="">-- select program --</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="data-science">Data Science</option>
+                                    <option value="digital-marketing">Digital Marketing</option>
+                                    <option value="ui-ux-design">UI/UX Design</option>
+                                    <option value="mobile-development">Mobile Development</option>
+                                    <option value="cybersecurity">Cybersecurity</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-submit w-100">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+  </div>
+
+</section>

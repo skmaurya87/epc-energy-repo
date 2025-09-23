@@ -1,0 +1,92 @@
+
+
+
+.site-footer {
+    background-position: center center;
+}
+.site-footer div.border {
+  width: 70%;
+  height: 20px;
+  background-color: var(--color-dark-orange);
+  margin: 0px auto;
+  border-radius: 10px;
+  position: relative;
+  margin-top: -40px;
+}
+.overlay-black-dark {
+  background-color: rgba(85, 5, 12, .8);
+
+}
+.site-footer .footer-top {
+  padding: 30px 0 20px;
+}
+.site-footer .widget {
+  background-color: rgba(15, 23, 42, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  border-bottom: 2px solid var(--color-dark-orange);
+}
+.widget_services{
+    border-radius: 6px;
+    border-bottom: solid 2px var(--color-dark-orange);
+    margin-bottom: 16px;
+    ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        li{
+            border-bottom: solid 1px #454545;
+            padding: 10px 0px;
+            color: #bebebe;
+            a{
+                color: #bebebe;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: var(--color-primary1);
+                    padding-left: 8px;
+                }
+            }
+        }
+        li:last-child{
+          border-bottom: none;
+        }  
+    }
+}
+.site-footer .footer-bottom {
+  background-color: #0F172A;
+    padding: 25px 0;
+    color: #b0b0b0;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.overlay-black-dark:after {
+    opacity: 0.8;
+}
+.footer-address {
+  background-color: var(--color-white);
+  padding: 20px 10px;
+  border-radius: 5px;
+  color: var(--color-dark);
+}
+.footer-address div a {
+  color: var(--color-dark);
+}
+@media screen and (max-width: 768px) {
+  .footer-address div {
+    margin-bottom: 10px;
+  }
+}
+.footer-address i {
+  color: var(--color-primary1);
+  padding-right: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 14px;
+}
+.footer-address strong {
+  color: var(--color-primary1);
+  font-weight: bolder;
+  padding-right: 5px;
+}

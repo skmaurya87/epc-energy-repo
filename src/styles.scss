@@ -1,1 +1,416 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --primary-font1: "Montserrat", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --color-primary1: rgb(228, 52, 46);
+  --color-heading: #170006;
+  --color-bright-maroon: #e4342e;
+  --color-sec-bg: #f1f1e9;
+  --color-gray: #bbb6b7;
+  --color-light-maroon: #f5f0eb;
+  --color-dark: #0F172A;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-body: #fff;
+  --color-dark-blue: #37008e;
+  --color-light-blue: #0dace5;
+  --color-dark-red: #cc014a;
+  --color-dark-orange: #fd5e53;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+ .logo-big{
+            max-width: 180px;
+        }
+.offcanvas-body{
+    .dropdown-menu{
+        position: relative !important;
+        transform: inherit !important;
+        border-radius: 0px !important;
+    }
+}
+.color1{
+    color: var(--color-primary1);
+}
+.font-weight-300{
+    font-weight: 300;
+}
+.font-weight-400{
+    font-weight: 400;
+}
+.font-weight-600{
+    font-weight: 600;
+}
+.campus-overview{
+  background-image: url('/assets/img/2.jpg');
+  position: relative;
+  padding-top: 80px;
+  background-size: cover;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 52, 46, .8);
+    color: #FFF;
+  }
+  .choses-info {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  
+  .choses-info-content [class*="col-"] {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+}
+.list-inline {
+  display: inline-flex;
+  align-items: center;
+  li {
+    background-color: #e7e7e7;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin: 0px 4px;
+    transition: all 0.3s ease-in-out;
+
+    .facebook {
+      color: #3b5998;
+    }
+    .instagram {
+      color: #E1306C;
+    }
+    .linkedin {
+      color: #0077B5;
+    }
+    .youtube {
+      color: #FF0000;
+    }
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 16px;
+    height: 7px;
+    margin: 4px 3px;
+    transition: all 0.3s ease-in-out;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+    background: var(--color-dark-orange);
+    width: 24px;
+    height: 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.our-partners{
+  background-color: #f1faff;
+}
+.marquee-outer{
+  overflow: hidden;
+}
+.marquee-outer {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+}
+
+.clint-box {
+  flex: 0 0 auto;
+  box-shadow: #bae3fa 0px 1px 16px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: white;
+  margin:10px;
+  width: 160px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.clint-box img {
+  max-height: 60px; /* adjust logo size */
+  display: block;
+}
+
+/* Right → Left */
+.marquee-rtl .marquee-content {
+  animation: marquee-rtl 40s linear infinite;
+}
+
+@keyframes marquee-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Left → Right */
+.marquee-ltr .marquee-content {
+  animation: marquee-ltr 40s linear infinite;
+}
+
+@keyframes marquee-ltr {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.our-cources{
+  background-color: #f5f5f5;
+}
+.courses{
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .courses-info{
+    position: absolute;
+    z-index: 55;
+    padding: 36px 6px; 
+    .courses-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    }
+    &:before{
+      content: "";
+      position: fixed;
+      background: linear-gradient(rgba(6, 49, 44, 0) 0%, rgba(253, 94, 83, 0.93) 71.88%) !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: all 0.3s ease;
+    }
+    .icon-bx{
+      border: solid 3px #FFF;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      &:hover{
+       background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  &:hover .courses-info:before{
+    bottom: -80%;
+     transition: all 0.3s ease;
+  }
+}
+
+.approval-logo{
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 15px;
+  img{
+    max-width: 100%;
+    height: 80px;
+  }
+}
+
+.programs-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    li{
+    display: flex;
+    padding: 50px 40px 90px 40px;
+    width: 25%;
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    color: #FFF;
+    &:nth-child(1){
+        background-color: #37008e;
+    }
+    &:nth-child(2){
+        background-color: #fd5e53;
+    }
+    &:nth-child(3){
+        background-color: #0dace5;
+    }
+    &:nth-child(4){
+        background-color: #cc014a;
+    }
+    .add{
+    display: inline-flex;
+    position: absolute;
+    bottom: 30px;
+    font-size: 18px;
+    background-color: #e4342e;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4117647059);
+    }
+    &:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2784313725);
+    border-radius: 50% 50% 50% 0%;
+    bottom: 0px;
+    left: 0px;
+    transition: 1s;
+    }
+}
+    li:hover::after {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .programs-list {
+        li {
+           width: 50%;
+        }
+    }
+  }
+
+@media (max-width: 767px) {
+  .logo-big{
+    max-width: 120px;
+  }
+    .programs-list {
+        li {
+           width: 100%;
+        }
+    }
+  }

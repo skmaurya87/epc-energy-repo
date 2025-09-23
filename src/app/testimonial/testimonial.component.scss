@@ -1,0 +1,61 @@
+
+app-testimonial{
+.review-card {
+max-width: 500px;
+margin: 0 auto;
+font-size: 14px;
+}
+
+.profile-img {
+width: 50px !important;
+height: 50px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.quote-icon {
+font-size: 1.5rem;
+color: #4285f4;
+}
+
+.star-rating {
+color: #ffc107;
+}
+
+.google-logo {
+width: 30px;
+height: 30px;
+}       
+.text-end{
+border-left: solid 1px #ddd;
+}   
+.line-clamp-4 {
+display: -webkit-box;        /* creates a flexible box for clamping */
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;       /* number of lines to show */
+line-clamp: 4;               /* standard property for compatibility */
+overflow: hidden;
+text-overflow: ellipsis;
+min-height: 84px;
+}
+
+.owl-carousel .owl-stage-outer{
+  padding: 20px 0px;
+}
+.owl-carousel .owl-item.active {
+  transform: scale(0.90);
+  transition: all 0.4s ease-in-out;
+}
+.owl-item.active.center {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+  z-index: 5;
+  .card{
+    background-color: #f7faff;
+    .border-top{
+      background-color: #FFF;
+       border-top: solid 1px #ddd;
+    }
+  }
+}
+}

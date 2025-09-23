@@ -1,0 +1,73 @@
+<div class="approvals-recognitions my-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                  <h2 class="text-center mb-4 font-weight-600 text-uppercase">
+                <span class="color1">Recognitions</span> & Approvals
+            </h2>
+            </div>
+        </div>
+        <div class="row justify-content-center d-flex">
+            <div class="col-lg-2 col-6">
+                <div class="approval-logo">
+                    <img src="assets/img/isocertificate.png" alt="University Grants Commission, New Delhi">
+                </div>
+            </div>
+            <div class="col-lg-2 col-6">
+                <div class="approval-logo">
+                    <img src="assets/img/skill-India.png" alt="All India Council for Technical Education">
+                </div>
+            </div>
+            <div class="col-lg-2 col-6">
+                <div class="approval-logo">
+                    <img src="assets/img/uaflogo.png" alt="All India Council for Technical Education">
+                </div>
+            </div>
+            <div class="col-lg-2 col-6">
+                <div class="approval-logo">
+                    <img src="assets/img/iaflogo.png" alt="Bar Council of India, New Delhi">
+                </div>
+            </div>
+            <div class="col-lg-2 col-6">
+                <div class="approval-logo">
+                    <img src="assets/img/new-epc.png" alt="Board Of Technical Education, Uttar Pradesh">
+                </div>
+            </div>
+            <div class="col-lg-2 col-6">
+                <div class="approval-logo">
+                    <img src="assets/img/msme.png" alt="Pharmacy Council of India, New Delhi">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="our-cources py-4">
+    <div class="section-full pb-6">
+        <div class="container">
+            <h2 class="text-center mb-4 font-weight-600 text-uppercase">
+                <span class="color1">Our</span> courses
+                <i class="fa fa-graduation-cap color1"></i>
+            </h2>
+        </div>
+        <div class="container">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let item of courses; let i = index">
+                    <div class="courses">
+                        <img [src]="'../assets/img/' + item.src" [alt]="item.name">
+                        <div class="courses-info">
+                            <a [href]="item.link" class="courses-title">
+                                <span>{{item.name}}</span>
+                                <span class="icon-bx check-km mt-3">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</section>

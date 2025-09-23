@@ -1,0 +1,208 @@
+app-navbar {
+    .header-nav {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+        li.nav-item {
+            padding: 30px 6px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 4px;
+                background-color: var(--color-primary1);
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                transform: scaleX(0);
+            }
+
+            &:hover {
+                .nav-link {
+                    color: var(--color-primary1);
+                }
+
+                &::before {
+                    opacity: 1;
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        .dropdown {
+            position: relative;
+
+            .dropdown-menu {
+                opacity: 0;
+                display: block;
+                visibility: hidden;
+                transform: translateY(10px); // slight slide down
+                transition: all 0.3s ease-in-out;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                padding: 0px;
+                border-radius: 0px;
+                box-shadow: 0px 0px 3px 0px #999;
+                border: none;
+            }
+
+            &:hover {
+                .dropdown-menu {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        .dropdown-item {
+            padding: 8px 10px;
+            transition: all 0.3s ease-in-out;
+            min-width: 280px;
+            white-space: break-spaces;
+
+            &:hover {
+                background-color: rgba(228, 52, 46, .1);
+                color: #e4342e;
+            }
+
+        }
+    }
+
+
+
+    .offcanvas {
+        width: 300px !important;
+
+        .offcanvas-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .offcanvas-header .btn-close {
+            filter: invert(1);
+        }
+
+        .offcanvas-body {
+            padding: 0;
+
+
+            .navbar-nav .nav-link {
+                padding: 1rem 1.5rem;
+                border-bottom: 1px solid #eee;
+                transition: all 0.3s ease;
+                color: #333;
+                font-weight: 500;
+            }
+
+            .navbar-nav .nav-link:hover,
+            .navbar-nav .nav-link.active {
+                background-color: #f8f9fa;
+                color: #667eea;
+                padding-left: 2rem;
+            }
+
+            .dropdown-menu {
+                border: none;
+                box-shadow: none;
+                background-color: #f8f9fa;
+                position: static !important;
+                transform: none !important;
+                margin: 0;
+                border-radius: 0;
+            }
+
+            .dropdown-item {
+                padding: 0.75rem 2rem;
+                border-bottom: 1px solid #e9ecef;
+                color: #666;
+                font-size: 0.9rem;
+            }
+
+            .dropdown-item:hover {
+                background-color: #e9ecef;
+                color: #667eea;
+                padding-left: 2.5rem;
+            }
+
+            .dropdown-toggle::after {
+                float: right;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+    /* Custom hamburger icon */
+    .navbar-toggler {
+        border: none;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+        width: 24px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #333;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 0px;
+    }
+
+    .hamburger span:nth-child(2) {
+        top: 8px;
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 16px;
+    }
+
+
+
+}
+
+
+.marquee-top {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #FFF;
+    padding: 4px 0px;
+}
+
+.marquee-top span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
