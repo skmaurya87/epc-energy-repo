@@ -57,4 +57,12 @@ if (moduleFilename === __filename || moduleFilename.includes('iisnode')) {
   run();
 }
 
+// server.ts (before app creation)
+(global as any).window = {};
+(global as any).document = {
+  createElement: () => ({}),
+  body: {}
+};
+
+
 export * from './src/main.server';

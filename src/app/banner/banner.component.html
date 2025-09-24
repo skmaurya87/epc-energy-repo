@@ -1,5 +1,6 @@
 <section class="banner-section">
     <div class="banner-full">
+        <ng-container *ngIf="isBrowser">
         <owl-carousel-o [options]="customOptions1">
             <ng-template carouselSlide *ngFor="let item of banners;">
              <div  class="banner-pagination">
@@ -7,9 +8,20 @@
               </div>
             </ng-template>
         </owl-carousel-o>
+        </ng-container>
+        <ng-container *ngIf="!isBrowser">
+        <owl-carousel-o [options]="customOptions1">
+            <ng-template carouselSlide *ngFor="let item of banners;">
+             <div  class="banner-pagination">
+                 <img [src]="'assets/img/' + item.src" class="images"> 
+              </div>
+            </ng-template>
+        </owl-carousel-o>
+        </ng-container>
     </div> 
 <div class="container">
     <div class="caption col-lg-8">
+        <ng-container *ngIf="isBrowser">
         <owl-carousel-o [options]="customOptions2">
             <ng-template carouselSlide *ngFor="let content of contents;">
                 <div class="swiper-slide" [style.background]="content.color">
@@ -25,6 +37,24 @@
                 </div>
             </ng-template>
         </owl-carousel-o>
+        </ng-container>
+        <ng-container *ngIf="!isBrowser">
+        <owl-carousel-o [options]="customOptions2">
+            <ng-template carouselSlide *ngFor="let content of contents;">
+                <div class="swiper-slide" [style.background]="content.color">
+                    <div class="banner-content-inner">
+                        <div class="top-content">
+                            <h1 class="font-weight-600 mb-4">{{content.title}}</h1>
+                            <p>{{content.description}}</p>
+                        </div>
+                         <div style="direction: ltr;">
+                                <a [href]="content.link" class="site-btn" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+        </ng-container>
     </div>
 </div>
 </section>

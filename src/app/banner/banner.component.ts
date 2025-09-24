@@ -1,5 +1,7 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID, ViewEncapsulation } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+
 
 @Component({
   selector: 'app-banner',
@@ -8,9 +10,13 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   encapsulation: ViewEncapsulation.None
 })
 export class BannerComponent implements OnInit {
+isBrowser: boolean | undefined;
  banners: any[] = []
  contents: any[] = []
-  constructor() { }
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
 
   ngOnInit(): void {
     this.banners = [

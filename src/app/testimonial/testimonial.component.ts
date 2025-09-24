@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID, ViewEncapsulation } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -8,12 +9,18 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   encapsulation:ViewEncapsulation.None
 })
 export class TestimonialComponent implements OnInit {
+isBrowser: boolean | undefined;
  products = [
     { name: 'Product 1', image: 'assets/img/company1.jpg' },
     { name: 'Product 2', image: 'assets/img/company2.jpg' },
     { name: 'Product 3', image: 'assets/img/company3.jpg' }
   ];
-  constructor() { }
+
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
+
 
   ngOnInit(): void {
   }

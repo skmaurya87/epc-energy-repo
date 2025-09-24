@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+
 
 @Component({
   selector: 'app-our-courses',
@@ -7,9 +9,12 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./our-courses.component.scss']
 })
 export class OurCoursesComponent implements OnInit {
+  isBrowser: boolean | undefined;
   courses: any[] = [];
   
-  constructor() { }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
   
   ngOnInit(): void {
     this.courses = [
@@ -42,5 +47,4 @@ export class OurCoursesComponent implements OnInit {
         1400: { items: 6 }
       }
     };
-
 }
