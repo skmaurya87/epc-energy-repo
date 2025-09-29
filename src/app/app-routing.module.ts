@@ -28,6 +28,14 @@ import { SubstationDesignEngineeringComponent } from './pages/substation-design-
 import { WebDevelopmentTrainingComponent } from './pages/web-development-training/web-development-training.component';
 import { WorkshopProcessDesignEngineeringComponent } from './pages/workshop-process-design-engineering/workshop-process-design-engineering.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { CareerComponent } from './pages/career/career.component';
+import { CorporateTrainingComponent } from './pages/corporate-training/corporate-training.component';
+import { ItTrainingComponent } from './pages/it-training/it-training.component';
+import { MarketingComponent } from './pages/marketing/marketing.component';
+import { NonItTrainingComponent } from './pages/non-it-training/non-it-training.component';
+import { OnlineApplyComponent } from './pages/online-apply/online-apply.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
    { path: '', component: HomeComponent },
@@ -63,7 +71,17 @@ const routes: Routes = [
   { path: 'diploma-solar-power-plant-design-engineering', component: DiplomaSolarPowerPlantDesignEngineeringComponent },
   { path: 'workshop-process-design-engineering', component: WorkshopProcessDesignEngineeringComponent },
   { path: 'design-and-detailed-engineering-course', component: DesignAndDetailedEngineeringCourseComponent },
+   // ✅ Contact
   { path: 'contact', component: ContactComponent },
+  // ✅ New Static Pages
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'career', component: CareerComponent },
+  { path: 'it-training', component: ItTrainingComponent },
+  { path: 'non-it-training', component: NonItTrainingComponent },
+  { path: 'corporate-training', component: CorporateTrainingComponent },
+  { path: 'online-apply', component: OnlineApplyComponent },
+  { path: 'marketing', component: MarketingComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent }
 
 ];
 

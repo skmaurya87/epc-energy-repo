@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
     this.menuLink = [
       {
         name: "Home",
-        link: "index"
+        link: "/"
       },
       {
         name: "EPC Training",

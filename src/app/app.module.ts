@@ -38,6 +38,14 @@ import { SolarPowerDesignEngineeringCourseComponent } from './pages/solar-power-
 import { SubstationDesignEngineeringComponent } from './pages/substation-design-engineering/substation-design-engineering.component';
 import { WebDevelopmentTrainingComponent } from './pages/web-development-training/web-development-training.component';
 import { WorkshopProcessDesignEngineeringComponent } from './pages/workshop-process-design-engineering/workshop-process-design-engineering.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { CareerComponent } from './pages/career/career.component';
+import { ItTrainingComponent } from './pages/it-training/it-training.component';
+import { NonItTrainingComponent } from './pages/non-it-training/non-it-training.component';
+import { CorporateTrainingComponent } from './pages/corporate-training/corporate-training.component';
+import { OnlineApplyComponent } from './pages/online-apply/online-apply.component';
+import { MarketingComponent } from './pages/marketing/marketing.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 
 @NgModule({
@@ -76,7 +84,15 @@ import { WorkshopProcessDesignEngineeringComponent } from './pages/workshop-proc
     DiplomaSolarPowerPlantDesignEngineeringComponent,
     WorkshopProcessDesignEngineeringComponent,
     DesignAndDetailedEngineeringCourseComponent,
-    ContactComponent    
+    ContactComponent,
+    AboutUsComponent,
+    CareerComponent,
+    ItTrainingComponent,
+    NonItTrainingComponent,
+    CorporateTrainingComponent,
+    OnlineApplyComponent,
+    MarketingComponent,
+    PrivacyPolicyComponent    
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
