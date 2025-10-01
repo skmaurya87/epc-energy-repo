@@ -40,9 +40,9 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 const routes: Routes = [
    { path: '', component: HomeComponent },
    { path: 'process-design-engineering', component: ProcessDesignEngineeringComponent },
-   { path: 'piping-design-engineering', component: PipingDesignEngineeringComponent },
-  { path: 'electrical-design-engineering', component: ElectricalDesignEngineeringComponent },
-  { path: 'hvac-design-engineering', component: HvacDesignEngineeringComponent },
+   { path: 'piping-design-engineering', component: PipingDesignEngineeringComponent, data: { title: 'Home', breadcrumb: 'Home', banner: 'assets/img/about-banner.jpg' } },
+  { path: 'electrical-design-engineering', component: ElectricalDesignEngineeringComponent, data: { title: 'About Us', breadcrumb: 'About Us', banner: 'assets/img/about-banner.jpg' }  },
+  { path: 'hvac-design-engineering', component: HvacDesignEngineeringComponent, data: { title: 'Contact Us', breadcrumb: 'Contact', banner: 'assets/img/about-banner1.jpg' } },
   { path: 'solar-power-design-engineering-course', component: SolarPowerDesignEngineeringCourseComponent },
   { path: 'civil-design-engineering-training', component: CivilDesignEngineeringTrainingComponent },
   { path: 'instrumentation-design-engineering-course', component: InstrumentationDesignEngineeringCourseComponent },
