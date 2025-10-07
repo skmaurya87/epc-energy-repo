@@ -451,7 +451,6 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   width: 100%;
-  height: 100%;
   overflow: hidden;
   position: relative;
   img{
@@ -459,16 +458,14 @@ body {
   position: relative;
   z-index: 5;
   width: 100%;
-  height: 100%;
-  object-fit: cover;   /* makes sure image fills the shape */
   display: block;
   }
   &::before{
     content: '';
     background-color:#dfdfdf;
     position: absolute;
-    left: 0px;
-    right: 0px;
+    left: 16px;
+    right: 16px;
     top: 20px;
     bottom: 20px;
     z-index: 1;

@@ -46,6 +46,7 @@ import { CorporateTrainingComponent } from './pages/corporate-training/corporate
 import { OnlineApplyComponent } from './pages/online-apply/online-apply.component';
 import { MarketingComponent } from './pages/marketing/marketing.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -98,7 +99,8 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     CarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
     // BannerModule
   ],
   providers: [],
