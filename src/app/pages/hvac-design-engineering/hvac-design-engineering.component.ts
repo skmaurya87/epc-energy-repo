@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 @Component({
   selector: 'app-hvac-design-engineering',
   templateUrl: './hvac-design-engineering.component.html',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HvacDesignEngineeringComponent implements OnInit {
 
-  constructor() { }
+  htmlContent: SafeHtml = '';
+  
+  constructor(private http: HttpClient, private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
   }

@@ -8,6 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   menuLink: any[] | undefined;
+
+  
   constructor() { }
 
   ngOnInit(): void {
